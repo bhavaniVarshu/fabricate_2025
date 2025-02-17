@@ -1,0 +1,443 @@
+/* Media Queries */
+
+/* Large screens (Desktops and above - Default styling already applies) */
+
+/* Medium screens (Tablets and small desktops, max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .navbar ul {
+        gap: 10px; /* Reduce gap between navbar items */
+        font-size: 1.2rem;
+    }
+
+    .hero h1 {
+        font-size: 4.5rem; /* Reduce hero heading size */
+    }
+
+    .hero h3 {
+        font-size: 1.5rem; /* Adjust subtitle size */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Reduce paragraph size */
+    }
+
+    .about-section h1 {
+        font-size: 4rem; /* Smaller heading for about section */
+    }
+
+    .speakers-grid {
+        grid-template-columns: repeat(2, 1fr); /* Reduce columns to 2 */
+    }
+   
+
+    .themes-grid {
+        grid-template-columns: repeat(2, 1fr); /* Reduce columns for themes */
+    }
+ 
+}
+
+/* Small screens (Smartphones, max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; /* Stack navbar items */
+        gap: 15px;
+    }
+
+    .hero {
+        height: auto; /* Allow hero section to adjust its height */
+        padding: 40px 20px;
+        text-align: center;
+        transition: margin-top 0.3s ease;
+        /* margin-top: 170px;  */
+
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero h3 {
+        font-size: 1.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .buttons .btn {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+
+    .speakers-grid {
+        grid-template-columns: 1fr 1fr 1fr; /* Single column layout */
+    }
+    .speakers-grid .speaker img {
+      width:200px;
+      height: auto;
+    }
+
+    .themes-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .registration-pricing h2 {
+        font-size: 3rem; /* Adjust registration section heading size */
+    }
+
+    .registration-pricing p {
+        font-size: 1.5rem;
+    }
+ 
+}
+
+/* Extra small screens (Very small devices, max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .navbar ul {
+        gap: 5px; /* Further reduce gap */
+        font-size: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero h3 {
+        font-size: 1rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .about-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-section .about-content p {
+        font-size: 1.2rem;
+    }
+
+    .buttons .btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    .speakers-grid {
+      grid-template-columns: 1fr 1fr; /* Single column layout */
+  }
+  .speakers-grid .speaker img {
+    width:200px;
+    height: auto;
+  }
+
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #1C2126;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left:0;
+        padding: 10px;
+        padding: 10px 0;
+      z-index: 10;
+    }
+    .navbar ul.show {
+        display: flex;
+        text-align: center;
+          font-size: 2rem;
+    }
+  
+    .menu-icon {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+    }
+    .navbar .buttons {
+      display: none;
+  }
+  .eligible-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .submission-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .stats {
+    display: flex;
+    flex-direction: column;
+    gap:0;
+  }
+  .schedule-container table {
+    display: block; /* Change table to block */
+    overflow-x: auto;
+}
+
+.schedule-container th, 
+.schedule-container td {
+    display: block; /* Make rows stack */
+    width: 100%; /* Expand cells to full width */
+    text-align: left; /* Align text to left */
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.schedule-container .vertical-header {
+    display: none; /* Hide vertical headers on mobile */
+}
+
+.schedule-container tr {
+    display: block; /* Make each row block */
+    margin-bottom: 10px;
+}
+
+  
+  }
+
+  /* For extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .footer-container {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+
+    }
+  
+    .footer-links {
+      margin-left: 0;
+    }
+  
+    .footer-about,
+    .footer-links,
+    .footer-help,
+    .footer-subscribe {
+      max-width: 100%;
+      text-align: center;
+      display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .footer-subscribe input {
+      width: 100%;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+    .info-card {
+      padding:0;
+      
+    }
+    .info-card p {
+      line-height: 2;
+    }
+    .stats {
+      display: flex;
+      flex-direction: column;
+      gap:0;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
+    .vertical-header {
+      writing-mode: horizontal-tb;
+      text-orientation: initial;
+      font-size: 1rem;
+      text-align: left;
+    }
+  
+    .th-header div {
+      font-size: 1rem;
+    }
+  
+    .session-title {
+      font-size: 1rem;
+    }
+  
+    .speakername {
+      font-size: 0.9rem;
+    }
+  
+    .schedule-container {
+      padding: 10px;
+    }
+
+ 
+  }
+  
+  /* For small devices (tablets, 576px to 767px) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .footer-container {
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+  
+    .footer-about,
+    .footer-links,
+    .footer-help,
+    .footer-subscribe {
+      max-width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-links {
+      margin-left: 0;
+     
+    }
+  
+    .footer-subscribe input {
+      width: 100%;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+    .eligible-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .eligible-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .submission-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+     th,
+  td {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .vertical-header {
+    writing-mode: horizontal-tb;
+    text-orientation: initial;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  .th-header div {
+    font-size: 1.1rem;
+  }
+
+  .session-title {
+    font-size: 1.1rem;
+  }
+
+  .speakername {
+    font-size: 1rem;
+  }
+  
+   
+  }
+  
+  /* For medium devices (small laptops, 768px to 991px) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .footer-container {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .footer-about,
+    .footer-links,
+    .footer-help,
+    .footer-subscribe {
+      max-width: 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-links {
+      margin-left: 0;
+    }
+    th,
+    td {
+      padding: 12px;
+      font-size: 1rem;
+    }
+  
+    .vertical-header {
+      writing-mode: vertical-lr;
+      text-orientation: mixed;
+      font-size: 1.2rem;
+    }
+  
+    .th-header div {
+      font-size: 1.2rem;
+    }
+  
+    .session-title {
+      font-size: 1.2rem;
+    }
+  
+    .speakername {
+      font-size: 1.1rem;
+    }
+  
+ 
+  }
+  
+  /* For large devices (regular laptops and desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .footer-container {
+      justify-content: space-evenly;
+    }
+  
+    .footer-about,
+    .footer-links,
+    .footer-help,
+    .footer-subscribe {
+      max-width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    th,
+    td {
+      padding: 15px;
+      font-size: 1rem;
+    }
+  
+    .vertical-header {
+      font-size: 1.3rem;
+    }
+  
+    .th-header div {
+      font-size: 1.3rem;
+    }
+  
+    .session-title {
+      font-size: 1.3rem;
+    }
+  
+    .speakername {
+      font-size: 1.2rem;
+    }
+  
+  
+  }
+  
+  

@@ -1,0 +1,238 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+/* Navbar Styling */
+.header {
+    background: black;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+
+
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 120px; /* Adjust padding for spacing */
+    height: 100vh;
+}
+
+.hero-content {
+    max-width: 50%;
+    display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-family: 'Roboto';
+}
+
+
+.hero-content p {
+    font-size: 17px;
+    margin-bottom: 40px;
+    font-family: 'Space Grotesk';
+    text-align: justify;
+    font-weight: lighter;
+
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 140%;
+    height: auto;
+    filter: contrast(1.2);
+}
+
+/* plenary */
+
+/* organizer */
+.plenary-section {
+    background-color: #121417;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .plenary-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #1281ED;
+  }
+  
+  .plenary-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .plenary-card {
+    /* background-color: #1e1e1e; */
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .plenary-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .plenary-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    height: 250px;
+    border-radius: 5px;
+  }
+  
+  .plenary-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-family: 'Space Grotesk';
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .plenary-card p {
+    font-size: 0.9em;
+    color: #cccccc;
+    font-family: 'Space Grotesk';
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  .keynote-section {
+    background-color: #121417;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .keynote-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #1281ED;
+  }
+  
+  .keynote-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+  }
+  
+  .keynote-card {
+    /* background-color: #1e1e1e; */
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .keynote-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .keynote-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    height: 180px;
+    border-radius: 5px;
+  }
+  
+  .keynote-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-family: 'Space Grotesk';
+    font-weight: bold;
+  }
+  
+  .keynote-card p {
+    font-size: 0.9em;
+    color: #cccccc;
+    font-family: 'Space Grotesk';
+    font-weight: bold;
+  }
+
+  .team-cards {
+    display: flex;
+    gap:50px;
+  }
+
+  .team-card {
+    border-radius: 10px;
+    width: 180px;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .team-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: 140px;
+  }
+  .team-card h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-family: 'Space Grotesk';
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+  
+  
+
+  
+  
